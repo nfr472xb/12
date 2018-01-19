@@ -62,3 +62,29 @@
     margin-left: none;
     text-align: center;
 }
+
+
+.pname {
+    display:inline;
+    margin-left: 20Px;
+}
+
+.picon {
+    display:inline
+    top: 10px;
+
+}
+
+.layui-nav-tree .layui-nav-item a {
+    padding-left: 70px;
+}
+
+.picon {
+
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+
+

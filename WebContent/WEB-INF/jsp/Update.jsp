@@ -51,8 +51,7 @@
         <div class="layui-body">
             <!-- 内容主体区域 -->
             <div class="layui-row" style="padding: 15px;">
-				<div class="layui-col-md3"></div>
-				<div class="layui-col-md6">
+			
 	                <fieldset class="layui-elem-field layui-field-title animated slideInDown" style="margin-top: 20px;">
 	                    <legend>修改商品資訊</legend>
 	                </fieldset>
@@ -104,8 +103,7 @@
 	                    <button type="submit" class="layui-btn">送出</button>
 	                    <button type="button" onclick="goBack()" class="layui-btn">回上一頁</button>
 	                </form:form>
-                </div>
-                <div class="layui-col-md3"></div>
+        
             </div>
         </div>
 

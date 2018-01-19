@@ -29,16 +29,25 @@
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-filter="test">
+
                     <li class="layui-nav-item layui-nav-itemed">
-                        <a class="" href="${pageContext.request.contextPath}/overview">所有商品</a>
-                    </li>
+                            <i class="material-icons picon ">select_all</i>
+                            <a class="" href="${pageContext.request.contextPath}/overview">所有商品</a>
+                        </li>
+
+
                     <li class="layui-nav-item layui-nav-itemed">
-                        <a class="" href="${pageContext.request.contextPath}/category">商品分類</a>
-                    </li>
-					<li class="layui-nav-item layui-nav-itemed">
-                        <a class="" href="${pageContext.request.contextPath}/section">部門分類</a>
-                    </li>
+                            <i class="material-icons picon ">view_module</i>
+                            <a class="" href="${pageContext.request.contextPath}/category">商品分類</a>
+                        </li>
+
                     <li class="layui-nav-item layui-nav-itemed">
+                            <i class="material-icons picon ">card_travel</i>
+                            <a class="" href="${pageContext.request.contextPath}/section">部門分類</a>
+                        </li>
+
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <i class="material-icons picon ">add_circle_outline</i>
                         <a class="" href="${pageContext.request.contextPath}/create">新增商品</a>
                     </li>
                 </ul>

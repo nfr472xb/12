@@ -41,7 +41,7 @@
                         <a class="" href="${pageContext.request.contextPath}/section">部門分類</a>
                     </li>
                     <li class="layui-nav-item layui-nav-itemed">
-                        <a class="" href="${pageContext.request.contextPath}/create">新增商品</a>
+                        <a class="" href="${pageContext.request.contextPath}/create"><i class="material-icons">add_circle_outline</i>新增商品</a>
                     </li>
                 </ul>
             </div>
