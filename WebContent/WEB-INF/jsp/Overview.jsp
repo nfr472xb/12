@@ -11,11 +11,13 @@
 <link href="<c:url value="/resources/css/layui.css" />" rel="stylesheet" type="text/css">
 <link href="<c:url value="/resources/css/semantic.min.css" />" rel="stylesheet" type="text/css">
 <link href="<c:url value="/resources/css/animate.css" />" rel="stylesheet" type="text/css">
-<title>Stock Overview</title>
+<link href="<c:url value="/resources/css/mystyle.css" />" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" >
+<title>所有商品總覽 - FADI</title>
 <body class="layui-layout-body animated fadeIn" id="layuiContainer">
     <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
-            <div class="layui-logo"><a href="${pageContext.request.contextPath}/welcome">big camera</a></div>
+            <div class="layui-logo"><a href="${pageContext.request.contextPath}/welcome">FADI - 存貨管理</a></div>
             <!-- 头部区域（可配合layui已有的水平导航） -->
             <ul class="layui-nav layui-layout-left">
             </ul>
@@ -50,7 +52,7 @@
 		    <div style="padding: 15px;">
 		
 		        <fieldset class="layui-elem-field layui-field-title animated slideInDown" style="margin-top: 20px;">
-		            <legend>Stock Overview</legend>
+		            <legend>所有商品總覽</legend>
 		        </fieldset>
 		
 		        <form:form id="form" modelAttribute="stocks" class="layui-form">
@@ -104,13 +106,16 @@
 
         <div class="layui-footer">
             <!-- 底部固定区域 -->
-            Big Camera © 2018 - All right reserved.
+            Big Camera 2018 - All right reserved.
         </div>
     </div>
     <script src="<c:url value=" /resources/js/layui.js " />"></script>
     <script>
     function doDeletion() {
-    	confirm("確定刪除嗎 ?");
+    	return confirm("確定刪除嗎?");
+    }
+    function goBack() {
+    	window.history.back();
     }
     </script>
 </body>

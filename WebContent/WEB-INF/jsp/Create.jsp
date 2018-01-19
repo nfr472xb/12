@@ -12,13 +12,13 @@
 <link href="<c:url value="/resources/css/semantic.min.css" />" rel="stylesheet" type="text/css">
 <link href="<c:url value="/resources/css/animate.css" />" rel="stylesheet" type="text/css">
 <link href="<c:url value="/resources/css/mystyle.css" />" rel="stylesheet" type="text/css">
-
-<title>Stock Create</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" >
+<title>新增商品 - FADI</title>
 </head>
 <body class="layui-layout-body  animated fadeIn" id="layuiContainer">
     <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
-            <div class="layui-logo"><a href="${pageContext.request.contextPath}/welcome">big camera</a></div>
+            <div class="layui-logo"><a href="${pageContext.request.contextPath}/welcome">FADI - 存貨管理</a></div>
             <!-- 头部区域（可配合layui已有的水平导航） -->
             <ul class="layui-nav layui-layout-left">
             </ul>
@@ -55,12 +55,12 @@
                     <legend>新增商品</legend>
                 </fieldset>
                 <div  class="animated fadeInUp">
-                <form:form class = "myform" name="form" modelAttribute="stock" action="${pageContext.request.contextPath}/create" method="post">
+                <form:form class="myform" name="form" modelAttribute="stock" action="${pageContext.request.contextPath}/create" method="post">
                     <form:input type="hidden" name="stockId" path="stockId" />
 
                     <div class="layui-form-item">
-                         <form:label path="stockBrand" class="layui-form-label">商品名稱</form:label>
-                         <div class="layui-input-inline">
+                        <form:label path="stockName" class="layui-form-label">商品名稱</form:label>
+                        <div class="layui-input-inline">
                             <form:input type="text" class="layui-input" name="stockName" path="stockName" placeholder="請輸入" lay-verify="required" />
                         </div>
                     </div>
@@ -110,7 +110,7 @@
 
         <div class="layui-footer">
             <!-- 底部固定区域 -->
-            Big Camera © 2018 - All right reserved.
+            Big Camera 2018 - All right reserved.
         </div>
     </div>
     <script src="<c:url value=" /resources/js/layui.js " />"></script>

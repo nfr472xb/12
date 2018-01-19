@@ -8,15 +8,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>商品進貨</title>
+<title>商品進貨 - FADI</title>
 <link href="<c:url value="/resources/css/layui.css" />" rel="stylesheet" type="text/css">
 <link href="<c:url value="/resources/css/animate.css" />" rel="stylesheet" type="text/css">
-
+<link href="<c:url value="/resources/css/mystyle.css" />" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" >
 </head>
 <body class="layui-layout-body  animated fadeIn" id="layuiContainer">
     <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
-            <div class="layui-logo"><a href="${pageContext.request.contextPath}/welcome">big camera</a></div>
+            <div class="layui-logo"><a href="${pageContext.request.contextPath}/welcome">FADI - 存貨管理</a></div>
             <!-- 头部区域（可配合layui已有的水平导航） -->
             <ul class="layui-nav layui-layout-left">
             </ul>
@@ -105,7 +106,7 @@
 	                        </div>
 	                    </div>
 	                    
-	                    <button type="submit" class="layui-btn" onclick="return check()" onsubmit="return check()">送出</button>
+	                    <button type="submit" class="layui-btn" onsubmit="check()">送出</button>
 	                    <button type="button" onclick="goBack()" class="layui-btn">回上一頁</button>
 	                </form:form>
                 </div>
@@ -115,7 +116,7 @@
 
         <div class="layui-footer">
             <!-- 底部固定区域 -->
-            Big Camera © 2018 - All right reserved.
+            Big Camera 2018 - All right reserved.
         </div>
     </div>
     <script src="<c:url value="/resources/js/layui.js"/>"></script>
@@ -130,13 +131,16 @@
         }
         
         function check() {
-       		console.log(stockNum.value)
-       		console.log(saleNum.value)
-       		console.log('before')
-       		parseInt(stockNum.value) += parseInt(saleNum.value);
+			let stock = parseInt(stockNum.value)
+			let sale = parseInt(saleNum.value)
+       		stock += sale ;
+			stockNum.value = stock;
        		console.log(stockNum.value)
        		console.log(saleNum.value)
        		return true;
+        }
+        function goBack() {
+        	window.history.back();
         }
 
     </script>

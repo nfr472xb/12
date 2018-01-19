@@ -1,11 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-
-
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -14,13 +11,14 @@
 <link href="<c:url value="/resources/css/layui.css" />" rel="stylesheet" type="text/css">
 <link href="<c:url value="/resources/css/semantic.min.css" />" rel="stylesheet" type="text/css">
 <link href="<c:url value="/resources/css/animate.css" />" rel="stylesheet" type="text/css">
-
-<title>Review Category : ${stockCategory}</title>
+<link href="<c:url value="/resources/css/mystyle.css" />" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" >
+<title>產品分類 : ${stockCategory} - FADI</title>
 </head>
 <body class="layui-layout-body  animated fadeIn" id="layuiContainer">
     <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
-            <div class="layui-logo"><a href="${pageContext.request.contextPath}/welcome"><h1> <i class="material-icons">done</i>Big camera </h1> </a></div>
+            <div class="layui-logo"><a href="${pageContext.request.contextPath}/welcome">FADI - 存貨管理</a></div>
             <!-- 头部区域（可配合layui已有的水平导航） -->
             <ul class="layui-nav layui-layout-left">
             </ul>
@@ -53,7 +51,7 @@
             <!-- 内容主体区域 -->
             <div style="padding: 15px;">
                 <fieldset class="layui-elem-field layui-field-title animated slideInDown" style="margin-top: 20px;">
-                    <legend>Product Category : ${stockCategory}</legend>
+                    <legend>產品分類 : ${stockCategory}</legend>
                 </fieldset>
 		        <form:form id="form" modelAttribute="stocks" class="layui-form">
 		            <table class="frame ui table animated fadeInUp">
@@ -106,7 +104,7 @@
 
         <div class="layui-footer">
             <!-- 底部固定区域 -->
-            Big Camera © 2018 - All right reserved.
+            Big Camera 2018 - All right reserved.
         </div>
     </div>
     <script src="<c:url value=" /resources/js/layui.js " />"></script>

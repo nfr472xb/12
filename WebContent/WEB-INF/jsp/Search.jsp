@@ -10,14 +10,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="<c:url value="/resources/css/layui.css" />" rel="stylesheet" type="text/css">
 <link href="<c:url value="/resources/css/animate.css" />" rel="stylesheet" type="text/css">
-
-<title>搜尋結果</title>
+<link href="<c:url value="/resources/css/semantic.min.css" />" rel="stylesheet" type="text/css">
+<link href="<c:url value="/resources/css/mystyle.css" />" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" >
+<title>搜尋結果 - FADI</title>
 
 </head>
 <body class="layui-layout-body  animated fadeIn" id="layuiContainer">
     <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
-            <div class="layui-logo"><a href="${pageContext.request.contextPath}/welcome">big camera</a></div>
+            <div class="layui-logo"><a href="${pageContext.request.contextPath}/welcome">FADI - 存貨管理</a></div>
             <!-- 头部区域（可配合layui已有的水平导航） -->
             <ul class="layui-nav layui-layout-left">
             </ul>
@@ -104,7 +106,7 @@
 
         <div class="layui-footer">
             <!-- 底部固定区域 -->
-            Big Camera © 2018 - All right reserved.
+            Big Camera 2018 - All right reserved.
         </div>
     </div>
     <script src="<c:url value=" /resources/js/layui.js " />"></script>
